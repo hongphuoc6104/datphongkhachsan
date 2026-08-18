@@ -1,0 +1,43 @@
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+backend/.env
+frontend/.env
+realtime/.env
+
+# Dependencies
+**/vendor/
+**/node_modules/
+
+# Build, test, and runtime files
+**/dist/
+**/coverage/
+**/.phpunit.cache/
+backend/storage/logs/*.log
+backend/bootstrap/cache/*.php
+backend/storage/framework/cache/*
+backend/storage/framework/sessions/*
+backend/storage/framework/views/*
+!backend/storage/framework/cache/.gitignore
+!backend/storage/framework/sessions/.gitignore
+!backend/storage/framework/views/.gitignore
+
+# Local Docker data
+volumes/
+docker-data/
+
+# IDE, Agent & System files
+.agent/
+.agents/
+.gemini/
+scratch/
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+Thumbs.db
